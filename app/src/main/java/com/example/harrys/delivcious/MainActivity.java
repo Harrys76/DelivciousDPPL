@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     ListView list;
     String[] judul;
     String[] deskripsi;
-    int[] imgs = {R.mipmap.kfc, R.mipmap.mcd, R.mipmap.phd, R.mipmap.domino, R.mipmap.ksd, R.mipmap.recheese};
+    int[] imgs = {R.mipmap.kfc, R.mipmap.mcd, R.mipmap.phd, R.mipmap.domino, R.mipmap.ksd, R.mipmap.recheese, R.mipmap.aw, R.mipmap.hokben};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

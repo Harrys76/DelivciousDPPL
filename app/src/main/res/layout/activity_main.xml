@@ -24,11 +24,11 @@
 
         <ListView
             android:id="@+id/list1"
+            style="@style/CustomListItem"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.99"
             android:divider="@color/tes"
-            android:dividerHeight="5dp"
-            style="@style/CustomListItem"/>
+            android:dividerHeight="5dp" />
 
 </LinearLayout>

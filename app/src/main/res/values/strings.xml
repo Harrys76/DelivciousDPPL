@@ -12,12 +12,16 @@
         <item>Domino Pizza</item>
         <item>KSD (Kedai Soe-soe Delivery)</item>
         <item>Recheese Factory</item>
+        <item>AW</item>
+        <item>HokBen</item>
     </string-array>
 
     <string-array name="deskripsi">
         <item>Ayam Goreng Lezat dengan Resep Rahasia</item>
         <item>Dapatkan burger lezat hanya di McDonalds</item>
         <item>Satu-satunya tempat makanan pizza terbaik</item>
+        <item>Deskripsi delivery</item>
+        <item>Deskripsi delivery</item>
         <item>Deskripsi delivery</item>
         <item>Deskripsi delivery</item>
         <item>Deskripsi delivery</item>
