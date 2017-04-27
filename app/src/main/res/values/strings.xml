@@ -4,6 +4,7 @@
     <string name="nama">Nama Delivery</string>
     <string name="desk">Deskripsi</string>
     <string name="populer">POPULER</string>
+    <string name="sview">Switch View</string>
 
     <string-array name="judul">
         <item>KFC (Kentucky Fried Chicken)</item>

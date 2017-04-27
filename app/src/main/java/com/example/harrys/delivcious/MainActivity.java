@@ -1,113 +1,150 @@
 package com.example.harrys.delivcious;
 
-import android.content.Context;
-import android.content.res.Resources;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
+import android.view.ViewStub;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.GridView;
 import android.widget.ListView;
-import android.widget.TextView;
 
-import static com.example.harrys.delivcious.R.layout.baris;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView list;
-    String[] judul;
-    String[] deskripsi;
-    int[] imgs = {R.mipmap.kfc, R.mipmap.mcd, R.mipmap.phd, R.mipmap.domino, R.mipmap.ksd, R.mipmap.recheese, R.mipmap.aw, R.mipmap.hokben};
+    ListView listView;
+    GridView gridView;
+    ViewStub stubList;
+    ViewStub stubGrid;
+    GridViewAdapter gridViewAdapter;
+    ListViewAdapter listViewAdapter;
+    List<Product> productList;
+    int currentViewMode = 0;
+
+    static final int VIEW_MODE_LISTVIEW = 0;
+    static final int VIEW_MODE_GRIDVIEW = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Resources res = getResources();
-        judul = res.getStringArray(R.array.judul);
-        deskripsi = res.getStringArray(R.array.deskripsi);
-        list = (ListView) findViewById(R.id.list1);
-        final MyAdapter adapter = new MyAdapter(this, judul, imgs, deskripsi);
-        list.setAdapter(adapter);
+        stubList = (ViewStub) findViewById(R.id.stub_list);
+        stubGrid = (ViewStub) findViewById(R.id.stub_grid);
 
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                switch(i) {
-                    case 0 :
-                        break;
-                    case 1 :
-                        break;
-                    case 2 :
-                        break;
-                    case 3 :
-                        break;
-                    case 4 :
-                        break;
-                    case 5 :
-                        break;
-                    case 6 :
-                        break;
-                    case 7 :
-                        break;
-                    case 8 :
-                        break;
-                    case 9 :
-                        break;
-                }
-            }
-        });
+        stubList.inflate();
+        stubGrid.inflate();
+
+        listView = (ListView) findViewById(R.id.list1);
+        gridView = (GridView) findViewById(R.id.mygridview);
+
+        getProductList();
+
+        SharedPreferences sharedPreferences = getSharedPreferences("ViewMode", MODE_PRIVATE);
+        currentViewMode = sharedPreferences.getInt("currentViewMode", VIEW_MODE_LISTVIEW);
+
+        listView.setOnItemClickListener(onItemClick);
+        gridView.setOnItemClickListener(onItemClick);
+
+        switchView();
     }
 
-    private static class ViewHolder {
-        ImageView myImage;
-        TextView myTitle;
-        TextView myDesc;
+    public List<Product> getProductList() {
+
+        productList = new ArrayList<>();
+        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.mcd, "McDonald's", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.domino, "Domino", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.phd, "PHD (Pizza Hut Delivery)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.aw, "A&W", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.ksd, "KSD (Kedai Soe-soe Delivery)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.hokben, "HokBen", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.recheese, "Recheese Factory", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
+
+        return productList;
     }
 
-    private class MyAdapter extends ArrayAdapter<String> {
-        Context context;
-        int[] images;
-        String[] mJudul;
-        String[] mDeskripsi;
-
-        MyAdapter (Context c, String[] judul, int imgs[], String[] deskripsi) {
-            super(c, baris, R.id.nama_deliv, judul);
-            this.context = c;
-            this.images = imgs;
-            this.mJudul = judul;
-            this.mDeskripsi = deskripsi;
-        }
-
-        @NonNull
+    AdapterView.OnItemClickListener onItemClick = new AdapterView.OnItemClickListener() {
         @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            ViewHolder holder;
-
-            if (convertView == null) {
-                convertView = LayoutInflater.from(context).inflate(R.layout.baris,parent,false);
-                holder = new ViewHolder();
-                holder.myImage = (ImageView) convertView.findViewById(R.id.gambar);
-                holder.myTitle = (TextView) convertView.findViewById(R.id.nama_deliv);
-                holder.myDesc = (TextView) convertView.findViewById(R.id.deskripsi);
-
-                convertView.setTag(holder);
-
-            } else {
-                holder = (ViewHolder) convertView.getTag();
+        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            switch (i) {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
             }
-
-            holder.myImage.setImageResource(images[position]);
-            holder.myTitle.setText(mJudul[position]);
-            holder.myDesc.setText(mDeskripsi[position]);
-
-            return convertView;
         }
+    };
+
+    private void switchView() {
+
+        if (VIEW_MODE_LISTVIEW == currentViewMode) {
+            stubList.setVisibility(View.VISIBLE);
+            stubGrid.setVisibility(View.GONE);
+        } else {
+            stubList.setVisibility(View.GONE);
+            stubGrid.setVisibility(View.VISIBLE);
+        }
+        setAdapters();
+    }
+
+    private void setAdapters() {
+
+        if (VIEW_MODE_LISTVIEW == currentViewMode) {
+            listViewAdapter = new ListViewAdapter(this, R.layout.baris, productList);
+            listView.setAdapter(listViewAdapter);
+        } else {
+            gridViewAdapter = new GridViewAdapter(this, R.layout.grid, productList);
+            gridView.setAdapter(gridViewAdapter);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu :
+                if (VIEW_MODE_LISTVIEW == currentViewMode) {
+                    currentViewMode = VIEW_MODE_GRIDVIEW;
+                } else {
+                    currentViewMode = VIEW_MODE_LISTVIEW;
+                }
+
+                switchView();
+
+                SharedPreferences sharedPreferences = getSharedPreferences("ViewMode", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("currentViewMode", currentViewMode);
+                editor.apply();
+
+                break;
+        }
+
+        return true;
     }
 }
