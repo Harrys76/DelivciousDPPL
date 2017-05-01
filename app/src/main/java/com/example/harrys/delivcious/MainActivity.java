@@ -1,5 +1,6 @@
 package com.example.harrys.delivcious;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.os.Build.VERSION_CODES.M;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
     public List<Product> getProductList() {
 
         productList = new ArrayList<>();
-        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.mcd, "McDonald's", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.domino, "Domino", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.ksd, "KSD (Kedai Soe-soe Delivery)", "Dijamin 20 menit tiba!"));
+        productList.add(new Product(R.mipmap.otobento2, "Oto Bento", "Japanese Fast Food"));
+        productList.add(new Product(R.mipmap.duensa, "Duensa Kitchen", "Sajian Kuliner Nusantara"));
         productList.add(new Product(R.mipmap.phd, "PHD (Pizza Hut Delivery)", "Deskripsi Disini"));
         productList.add(new Product(R.mipmap.aw, "A&W", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.ksd, "KSD (Kedai Soe-soe Delivery)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.kfc, "KSD (Kedai Soe-soe Delivery)", "Deskripsi Disini"));
         productList.add(new Product(R.mipmap.hokben, "HokBen", "Deskripsi Disini"));
         productList.add(new Product(R.mipmap.recheese, "Recheese Factory", "Deskripsi Disini"));
         productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
@@ -75,8 +78,12 @@ public class MainActivity extends AppCompatActivity {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
             switch (i) {
                 case 0:
+                    Intent ksd = new Intent(MainActivity.this, KSD.class);
+                    startActivity(ksd);
                     break;
                 case 1:
+                    Intent oto = new Intent(MainActivity.this, OtoBento.class);
+                    startActivity(oto);
                     break;
                 case 2:
                     break;

@@ -36,12 +36,18 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
-        <activity android:name=".DuensaKitchen"
-            android:label="@string/duensa"/>
-        <activity android:name=".KSD"
-            android:label="@string/ksd"/>
-        <activity android:name=".OtoBento"
-            android:label="@string/oto"/>
+        <activity
+            android:name=".KSD"
+            android:label="@string/ksd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OtoBento"
+            android:label="@string/oto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DuensaKitchen"
+            android:label="@string/title_activity_duensa_kitchen"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
