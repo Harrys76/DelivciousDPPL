@@ -8,12 +8,17 @@
     <string name="sview">Switch View</string>
     <string name="duensa">Duensa Kitchen</string>
     <string name="oto">Oto Bento</string>
+    <string name="foodm">Food Market Delivery</string>
     <string name="alamatksd">Jalan Sukabirus No.D55, Citeureup, Dayeuhkolot, Citeureup, Dayeuhkolot, Kota Bandung, Jawa Barat 40257</string>
     <string name="noksd">0877&#8211;2277&#8211;5757</string>
     <string name="alamatoto">Jl.Telekomunikasi No.01 Telkom University Sukapura Dayeuhkolot, Sukapura, Dayeuhkolot, Bandung, Jawa Barat 40257</string>
     <string name="nooto">0852&#8211;9535&#8211;2410</string>
     <string name="alamatduensa">d/h. Dapur Salam dan Kedai Hanna Jl. Radio Sukabirus No. 48B</string>
     <string name="noduensa">0857&#8211;9446&#8211;7595</string>
+    <string name="alamatfoodm">Sekitar Kampus Telkom University</string>
+    <string name="nofoodm">0856&#8211;2484&#8211;4566</string>
+    <string name="alamatyummy">Jl. Mangga Dua Depan TIKI Sukapura dan Depan Alfamart Sukabirus</string>
+    <string name="noyummy">0899&#8211;6055&#8211;623</string>
 
     <string-array name="judul">
         <item>KFC (Kentucky Fried Chicken)</item>
@@ -41,4 +46,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_oto_bento">OtoBento</string>
     <string name="title_activity_duensa_kitchen">DuensaKitchen</string>
+    <string name="title_activity_food_market">FoodMarket</string>
+    <string name="title_activity_yummy_delivery">YummyDelivery</string>
 </resources>

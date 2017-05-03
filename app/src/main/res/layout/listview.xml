@@ -8,8 +8,8 @@
         style="@style/CustomListItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:divider="@color/tes"
         android:layout_marginBottom="5dp"
+        android:divider="@color/tes"
         android:dividerHeight="7dp" />
 
 </FrameLayout>

@@ -7,7 +7,9 @@
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     android:paddingTop="5dp"
-    tools:context="com.example.harrys.delivcious.KSD">
+    android:scrollbars="none"
+    android:fillViewport="true"
+    tools:context="com.example.harrys.delivcious.FoodMarket">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -17,38 +19,6 @@
         android:shrinkColumns="*">
 
         <TableRow
-            android:background="#F9A825"
-            android:padding="5dp"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@android:color/background_dark"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1.4"
-                android:gravity="center"
-                android:text="Paket"
-                android:textColor="@android:color/background_dark"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:gravity="center"
-                android:text="Harga"
-                android:textColor="@android:color/background_dark"
-                android:textSize="15sp" />
-        </TableRow>
-
-        <TableRow
             android:padding="5dp"
             android:weightSum="3">
             <ImageView
@@ -56,7 +26,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/breastksd"
+                android:src="@mipmap/fdm3"
                 android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
@@ -66,14 +36,14 @@
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:textColor="@android:color/background_dark"
-                android:text="Nasi, Es Teh, Chicken Breast" />
+                android:text="Ayam Saus Padang" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
-                android:text="Rp. 10.500" />
+                android:text="Rp. 10.000" />
         </TableRow>
 
         <TableRow
@@ -84,7 +54,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/drumstickksd"
+                android:src="@mipmap/fdm2"
                 android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
@@ -94,14 +64,14 @@
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:textColor="@android:color/background_dark"
-                android:text="Nasi, Es Teh, Drumstick" />
+                android:text="Ayam Rawit Presto" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
-                android:text="Rp. 9.500" />
+                android:text="Rp. 10.000" />
         </TableRow>
 
         <TableRow
@@ -112,7 +82,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/wingsksd"
+                android:src="@mipmap/fdm"
                 android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
@@ -122,14 +92,14 @@
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:textColor="@android:color/background_dark"
-                android:text="Nasi, Es Teh, Chicken Wing" />
+                android:text="Ayam Dadar Gulung" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
-                android:text="Rp. 8.500" />
+                android:text="Rp. 10.000" />
         </TableRow>
 
         <TableRow
@@ -140,7 +110,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/spicybreastksd"
+                android:src="@mipmap/fdm4"
                 android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
@@ -150,28 +120,26 @@
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:textColor="@android:color/background_dark"
-                android:text="Nasi, Es Teh, Spicy Breast" />
+                android:text="Ayam Suir Orak-Arik" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
-                android:text="Rp. 13.500" />
+                android:text="Rp. 10.000" />
         </TableRow>
 
         <TableRow
             android:padding="5dp"
             android:weightSum="3">
-
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/firedrumstickksd" />
-
+                android:src="@mipmap/fdm5"
+                android:gravity="center" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -180,48 +148,14 @@
                 android:paddingStart="5dp"
                 android:paddingEnd="5dp"
                 android:textColor="@android:color/background_dark"
-                android:text="Nasi, Es Teh, Spicy Drumstick" />
+                android:text="Ayam Lumpia (isi 6)" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
-                android:text="Rp. 12.500" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="5dp"
-            android:weightSum="3">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:scaleType="centerCrop"
-                android:src="@mipmap/firewingksd" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1.4"
-                android:gravity="center"
-                android:paddingEnd="5dp"
-                android:paddingStart="5dp"
-                android:text="(Nasi, Es Teh, Spicy Wing"
-                android:textColor="@android:color/background_dark" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.6"
-                android:gravity="center"
-                android:text="Rp. 11.500"
-                android:textColor="@android:color/background_dark" />
+                android:text="Rp. 12.000" />
         </TableRow>
 
     </TableLayout>

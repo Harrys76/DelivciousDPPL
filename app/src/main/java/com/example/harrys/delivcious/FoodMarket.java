@@ -1,8 +1,6 @@
 package com.example.harrys.delivcious;
 
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -19,7 +17,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class DuensaKitchen extends AppCompatActivity {
+public class FoodMarket extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +37,7 @@ public class DuensaKitchen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_duensa_kitchen);
+        setContentView(R.layout.activity_food_market);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -74,12 +72,13 @@ public class DuensaKitchen extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    return new DuensaInfo();
+                    return new FoodMInfo();
                 case 1:
-                    return new DuensaMenu();
+                    return new FoodMMenu();
                 default:
                     return null;
             }
+
         }
 
         @Override

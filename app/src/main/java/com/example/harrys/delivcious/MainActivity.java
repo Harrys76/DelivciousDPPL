@@ -15,8 +15,6 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.os.Build.VERSION_CODES.M;
-
 public class MainActivity extends AppCompatActivity {
 
     ListView listView;
@@ -62,13 +60,8 @@ public class MainActivity extends AppCompatActivity {
         productList.add(new Product(R.mipmap.ksd, "KSD (Kedai Soe-soe Delivery)", "Dijamin 20 menit tiba!"));
         productList.add(new Product(R.mipmap.otobento2, "Oto Bento", "Japanese Fast Food"));
         productList.add(new Product(R.mipmap.duensa, "Duensa Kitchen", "Sajian Kuliner Nusantara"));
-        productList.add(new Product(R.mipmap.phd, "PHD (Pizza Hut Delivery)", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.aw, "A&W", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.kfc, "KSD (Kedai Soe-soe Delivery)", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.hokben, "HokBen", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.recheese, "Recheese Factory", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
-        productList.add(new Product(R.mipmap.kfc, "KFC (Kentucky Fried Chicken)", "Deskripsi Disini"));
+        productList.add(new Product(R.mipmap.foodmarket, "Food Market Delivery", "Harga anak kos, selera anak bos!"));
+        productList.add(new Product(R.mipmap.yummydelivery, "Yummy Delivery", "Grab it fast, feel the taste!"));
 
         return productList;
     }
@@ -86,18 +79,16 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(oto);
                     break;
                 case 2:
+                    Intent duensa = new Intent(MainActivity.this, DuensaKitchen.class);
+                    startActivity(duensa);
                     break;
                 case 3:
+                    Intent foodm = new Intent(MainActivity.this, FoodMarket.class);
+                    startActivity(foodm);
                     break;
                 case 4:
-                    break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
+                    Intent yummy = new Intent(MainActivity.this, YummyDelivery.class);
+                    startActivity(yummy);
                     break;
             }
         }

@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/splash"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -46,8 +46,16 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DuensaKitchen"
-            android:label="@string/title_activity_duensa_kitchen"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/duensa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FoodMarket"
+            android:label="@string/foodm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".YummyDelivery"
+            android:label="Yummy Delivery"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

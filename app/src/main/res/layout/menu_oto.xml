@@ -1,322 +1,332 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
+    android:fillViewport="true"
     android:paddingBottom="5dp"
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     android:paddingTop="5dp"
-    android:orientation="vertical"
+    android:scrollbars="none"
     tools:context="com.example.harrys.delivcious.OtoBento">
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:baselineAligned="false"
-            android:orientation="horizontal"
-            android:shrinkColumns="*">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:paddingBottom="50dp">
 
-            <TableRow
-                android:background="#F9A825"
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.4"
-                    android:text="No"
-                    android:textSize="15sp"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:gravity="center"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Menu" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textSize="15sp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Harga" />
-            </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="1"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Beef Teriyaki" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 19.000" />
-            </TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/satu" />
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="2"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Chicken Teriyaki" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 16.500" />
-            </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Beef Teriyaki"
+                android:textColor="@android:color/background_dark" />
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="3"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Beef Yakiniku" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 19.000" />
-            </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 19.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="D"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Soto Ayam, Tempe Goreng, Sambal, Air Mineral" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 12.000" />
-            </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="E"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Lele Goreng/Bakar, Tempe Goreng, Sambal, Air Mineral" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 12.000" />
-            </TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/dua" />
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="F"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Ayam Rendang, Tahu + Tempe, Sambal, Lalaban" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 13.000" />
-            </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Chicken Teriyaki"
+                android:textColor="@android:color/background_dark" />
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="G"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Ayam Rica-rica, Tahu + Tempe, Lalaban" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 13.000" />
-            </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 16.500"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="H"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Ayam Goreng/Bakar, Tahu + Tempe, Sambal, Lalaban" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 13.000" />
-            </TableRow>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="I"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Bawal Goreng/Bakar, Tahu + Tempe, Sambal, Lalaban" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 13.000" />
-            </TableRow>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/tiga" />
 
-            <TableRow
-                android:padding="5dp"
-                android:weightSum="3">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.4"
-                    android:text="J"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"/>
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Nasi, Ayam Goreng, Pepes Tahu, Sambal, Lalaban" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.6"
-                    android:gravity="center"
-                    android:textColor="@android:color/background_dark"
-                    android:text="Rp. 13.000" />
-            </TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Beef Yakiniku"
+                android:textColor="@android:color/background_dark" />
 
-        </TableLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 19.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
 
-</LinearLayout>
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/empat" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Chicken Yakiniku"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 15.500"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/lima" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Spicy Chicken"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 15.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/enam" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Okkado"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 17.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/tujuh" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Ebi Furai"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 17.500"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/delapan" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Tori No Teba"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 23.500"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/sembilan" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Chicken Katsu"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 17.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+        <TableRow
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/sepuluh" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="Crab Roll"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:text="Rp. 19.000"
+                android:textColor="@android:color/background_dark" />
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>

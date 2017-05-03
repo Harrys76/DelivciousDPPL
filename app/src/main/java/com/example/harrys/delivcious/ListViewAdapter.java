@@ -14,9 +14,6 @@ import java.util.List;
 
 public class ListViewAdapter extends ArrayAdapter<Product> {
 
-    //int[] imgs = {R.mipmap.kfc, R.mipmap.mcd, R.mipmap.domino, R.mipmap.phd, R.mipmap.aw, R.mipmap.ksd, R.mipmap.hokben, R.mipmap.recheese, R.mipmap.kfc, R.mipmap.kfc};
-
-    //int[] images;
     public ListViewAdapter(Context context, int resource, List<Product> objects) {
         super(context, resource, objects);
     }
