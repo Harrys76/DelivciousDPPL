@@ -141,6 +141,11 @@ public class MainActivity extends AppCompatActivity {
                 editor.apply();
 
                 break;
+
+            case R.id.about :
+                Intent i = new Intent(MainActivity.this, AboutUs.class);
+                startActivity(i);
+                break;
         }
 
         return true;

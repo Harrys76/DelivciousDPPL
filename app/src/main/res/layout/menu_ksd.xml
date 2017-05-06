@@ -212,7 +212,7 @@
                 android:gravity="center"
                 android:paddingEnd="5dp"
                 android:paddingStart="5dp"
-                android:text="(Nasi, Es Teh, Spicy Wing"
+                android:text="Nasi, Es Teh, Spicy Wing"
                 android:textColor="@android:color/background_dark" />
 
             <TextView

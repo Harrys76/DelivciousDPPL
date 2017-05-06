@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.harrys.delivcious">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -55,7 +58,9 @@
         <activity
             android:name=".YummyDelivery"
             android:label="Yummy Delivery"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutUs"
+            android:label="About Us"/>
     </application>
 
 </manifest>

@@ -55,6 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:src="@mipmap/ic_phone_black_24dp"
+            android:id="@+id/numfm"
             android:layout_weight="0.3"/>
 
         <TextView
