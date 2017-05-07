@@ -11,6 +11,7 @@
         android:layout_marginRight="5dp"
         android:columnWidth="166dp"
         android:background="@color/tes"
+        android:scrollbars="none"
         android:gravity="center|bottom"
         android:horizontalSpacing="10dp"
         android:numColumns="2"

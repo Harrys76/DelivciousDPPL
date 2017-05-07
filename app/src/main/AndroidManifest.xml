@@ -60,7 +60,7 @@
             android:label="Yummy Delivery"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".AboutUs"
-            android:label="About Us"/>
+            android:label="About"/>
     </application>
 
 </manifest>
